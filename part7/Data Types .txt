@@ -1,0 +1,52 @@
+Data Types
+
+int
+str
+float
+bool
+
+Casting
+x = int(2.59) # x will be equal to 2
+
+Dynamic Typing 
+
+age = 12
+
+
+age: int
+age = 12
+age = "twelve"
+
+name: str
+height: float
+is_human: bool
+
+def police_check(age):
+  if age > 18:
+    can drive = True
+  else:
+    can_drive = False
+  return can_drive
+
+print(police_check(19))
+if police_check(19):
+  print("You may pass")
+else:
+  print("Pay a fine")
+
+def police_check(age: int) -> bool: #Expect to return a boolean
+  if age > 18:
+    can drive = True
+  else:
+    can_drive = False
+  return can_drive
+
+print(police_check("nineteen"))
+if police_check("nineteen"):
+  print("You may pass")
+else:
+  print("Pay a fine")
+
+Type Hints - Add some above
+def greeting(name: str) -> str:
+  return "Hello " + name
